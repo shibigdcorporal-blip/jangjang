@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, pink);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in;
+
+     background-color: #ffc5d0; /* soft pink background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.title {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 0 0 10px rgb(48, 3, 48);
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #000000;
+    margin-bottom: 20px;
+    
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #28a745;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#giftBox {
+    margin-top: 500px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease;
+}
+
+#giftBox.show {
+    opacity: 1;
+    transform: scale(1);
+
+
+}
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+.gift-img {
+    width: 150px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.message1 {
+
+    color: #4e0135;
+    margin-top: 30px;
+   
+    
+}
+
+.message {
+    color: #4e0135;
+    margin-top: 230px;
+    text-shadow: 0 0 5px #000000;
+    text-align: justify;      /* pantayin sa kaliwa at kanan */
+    line-height: 1.5;         /* dagdagan ng pagitan bawat linya */
+    font-size: 12px;          /* mas maliit para di masikip */
+    margin-left: 50px;   /* space sa kaliwa */
+    margin-right: 1 0px;  /* space sa kanan */
+    text-align: justify;
+   
+}
+
